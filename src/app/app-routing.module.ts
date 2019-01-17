@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ServiceComponent } from './service/service.component';
+import { StaticComponent } from './static/static.component';
 
 const routes: Routes = [
   {
@@ -18,8 +19,12 @@ const routes: Routes = [
     component : ServiceComponent
   },
   {
+    path : '',
+    component: StaticComponent
+  },
+  {
     path : '**',
-    redirectTo : 'service',
+    redirectTo : '',
   }
 ];
 
