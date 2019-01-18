@@ -1,12 +1,19 @@
-<p>
-  about works!
-</p>
+<h1>{{title}}</h1>
+<h2>My favorite hero is: {{myHero}}</h2>
 
+<p>Heroes:</p>
+<ul>
+  <li *ngFor="let hero of heroes">
+    {{ hero }}
+  </li>
+</ul>
 
-<nav>
-  <a routerLink="/">home</a>
-</nav>
+<p>List all man:</p>
+<ul>
+  <li *ngFor="let men of man">
+    {{ men.id }} :
+    {{ men.name }}
+    </li>
+</ul>
+<p *ngIf="man.length > 3">There are many man!</p>
 
-<section>
-  <app-blog> </app-blog>
-</section>
