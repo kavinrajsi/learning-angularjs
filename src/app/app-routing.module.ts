@@ -5,6 +5,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ServiceComponent } from './service/service.component';
 import { StaticComponent } from './static/static.component';
 import { ProjectComponent } from './project/project.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path : 'service',
     component : ServiceComponent
+  },
+  {
+    path : 'contact',
+    component : ContactComponent
   },
   {
     path : '',
