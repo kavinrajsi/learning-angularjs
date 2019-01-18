@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ServiceComponent } from './service/service.component';
 import { StaticComponent } from './static/static.component';
+import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
   {
