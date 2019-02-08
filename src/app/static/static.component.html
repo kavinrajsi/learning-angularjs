@@ -1,3 +1,31 @@
-<p>
-  static home works!
-</p>
+<div class="container">
+  <div class="row">
+      <p>
+          static home works!
+        </p>
+    <div class="table-responsive">
+      <table class="table " *ngIf="arrBirds">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Style</th>
+            <th>Ounces</th>
+            <th>ABV(Alcohol By Volume)</th>
+            <th>IBU(International Bitterness Units)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let bird of arrBirds">
+            <td>{{bird.id}}</td>
+            <td>{{bird.name}}</td>
+            <td>{{bird.style}}</td>
+            <td>{{bird.ounces}}</td>
+            <td>{{bird.abv}}</td>
+            <td>{{bird.ibu}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
