@@ -1,3 +1,40 @@
 <p>
   project works!
 </p>
+<p>{{ myString | formatString: { PoBox: 123, MyTest: '111' } }}</p>
+<div class="table-responsive">
+  <table class="table " *ngIf="arrBirds">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Director Name</th>
+        <!-- <th>Actor 1</th> -->
+        <!-- <th>Actor 2</th> -->
+        <!-- <th>Genres</th> -->
+        <!-- <th>Language</th> -->
+        <th>Country</th>
+        <th>Contnet Rating</th>
+        <th>Budget</th>
+        <th>Title Year</th>
+        <th>Plot Keywords</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bird of arrBirds">
+        <td> <a href="{{bird.movie_imdb_link}}">{{bird.movie_title}}</a></td>
+        <td> <a href="{{bird.movie_imdb_link}}">{{bird.director_name}}</a></td>
+        <!-- <td> <a href="{{bird.movie_imdb_link}}">{{bird.actor_1_name}}</a></td> -->
+        <!-- <td> <a href="{{bird.movie_imdb_link}}">{{bird.actor_2_name}}</a></td> -->
+        <!-- <td> <a href="{{bird.movie_imdb_link}}">{{bird.genres}}</a></td> -->
+        <!-- <td> <a href="{{bird.movie_imdb_link}}">{{bird.language}}</a></td> -->
+        <td> <a href="{{bird.movie_imdb_link}}">{{bird.country}}</a></td>
+        <td> <a href="{{bird.movie_imdb_link}}">{{bird.content_rating}}</a></td>
+        <td> <a href="{{bird.movie_imdb_link}}">{{bird.budget}}</a></td>
+<!-- <td> <a href="{{bird.movie_imdb_link}}">{{bird.title_year}}</a></td> -->
+
+        <td> <a href="{{bird.movie_imdb_link}}">{{bird.plot_keywords}} </a></td>
+<td> <a href="{{bird.movie_imdb_link}}">{{bird.plot_keywords.split('|') }} </a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

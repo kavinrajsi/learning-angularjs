@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
+import { FormatStringPipe } from './pipe/string';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     NavbarComponent,
     FooterComponent,
     ContactComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FormatStringPipe
   ],
   imports: [
     BrowserModule,
