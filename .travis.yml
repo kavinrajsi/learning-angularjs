@@ -4,8 +4,6 @@ node_js:
   - "10.4.1"
 sudo: true
 
-addons:
-  chrome: stable
 
 branches:
   only:
@@ -16,7 +14,6 @@ before_script:
 
 script:
   - ng lint
-  - ng test --browsers ChromeHeadless
   - ng build --prod --base-href https://kavinrajsi.github.io/learning-angularjs/
 
 deploy:
