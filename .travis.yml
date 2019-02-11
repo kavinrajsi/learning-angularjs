@@ -1,0 +1,28 @@
+
+language: node_js
+node_js:
+  - "10.4.1"
+sudo: true
+
+addons:
+  chrome: stable
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng lint
+  - ng test --browsers ChromeHeadless
+  - ng build --prod --base-href https://kavinrajsi.github.io/learning-angularjs/
+
+deploy:
+  provider: pages
+  skip_cleanup: true # To avoid cleanup of the artifact generated during script
+  github_token: $GITHUB_TOKEN # Provided as an environment variable in travis
+  local_dir: dist/learning-path # Replace this with your project name
+  on:
+    branch: master

@@ -9,21 +9,18 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class ProjectComponent implements OnInit {
 
-  myString = "{{PoBox}} this is a test {{MyTest}}";
+  // myString = '{{PoBox}} this is a test {{MyTest}}';
 
   constructor(private httpService: HttpClient) { }
   arrBirds: string[];
 
-  ngOnInit()
-  {
+  ngOnInit() {
     this.httpService.get('../../assets/movies.json').subscribe(
-      data =>
-      {
+      data => {
         this.arrBirds = data as string[];	 // FILL THE ARRAY WITH DATA.
          console.table(this.arrBirds[1]);
       },
-      (err: HttpErrorResponse) =>
-      {
+      (err: HttpErrorResponse) => {
         console.log(err.message);
       }
     );
