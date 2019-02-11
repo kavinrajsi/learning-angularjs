@@ -14,7 +14,7 @@ before_script:
 
 script:
   - ng lint
-  - ng build --prod --base-href /
+  - ng build --prod --base-href /learning-path/
 
 deploy:
   provider: pages
