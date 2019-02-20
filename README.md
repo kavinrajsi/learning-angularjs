@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Learning
+
+[done]: https://image.flaticon.com/icons/svg/226/226972.svg "Done"
+
+| Tables        | Are           |
+| ------------- |:-------------:|
+|  sample       | ![done][done] |
+|               |               |
+|               |               |
+
